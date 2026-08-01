@@ -9,7 +9,7 @@ Hardware Availability: https://geekhack.org/index.php?topic=12047.0
 
 See [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) then the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information.
 
-## Keymap: alt_ime
+## Keymap: alt_lang
 
 This keymap is designed for **Japanese IME users using the US ANSI layout**. 
 
@@ -38,14 +38,14 @@ qmk setup
 popd
 ```
 
-### Build alt_ime keymap
+### Build alt_lang keymap
 
 ```bash
-qmk compile -kb hhkb/ansi -km alt_ime
+qmk compile -kb hhkb/ansi -km alt_lang
 ```
 
-### Flash alt_ime keymap
+### Flash alt_lang keymap
 
 ```bash
-qmk flash -kb hhkb/ansi -km alt_ime
+qmk flash -kb hhkb/ansi -km alt_lang
 ```

@@ -18,6 +18,19 @@ This keymap is designed for **Japanese IME users using the US ANSI layout**.
     * **Left Alt:** Tap to switch to **English** / Hold for `LAlt`.
     * **Right Alt:** Tap to switch to **Japanese** / Hold for `RAlt`.
 
+## Keymap: alt_convert_non_convert
+
+This keymap provides the Windows IME NonConvert and Convert keys on the Alt keys for **Japanese IME users using the US ANSI layout**.
+
+### Features
+* **Dual-Role Alt Keys (Mod-Tap):**
+    * **Left Alt:** Tap for **NonConvert** (`KC_INT5`, Windows VK `0x1D`) / Hold for `LAlt`.
+    * **Right Alt:** Tap for **Convert** (`KC_INT4`, Windows VK `0x1C`) / Hold for `RAlt`.
+
+### IME switching on Windows
+
+The keymap sends NonConvert and Convert directly, so PowerToys remapping is not required. Configure Microsoft IME to use NonConvert for IME off and Convert for IME on. Tapping the Alt keys then switches the IME input mode, while holding them continues to work as `LAlt` or `RAlt`.
+
 ## Install QMK MSYS for Mac
 
 ```zsh
@@ -48,4 +61,16 @@ qmk compile -kb hhkb/ansi -km alt_lang
 
 ```bash
 qmk flash -kb hhkb/ansi -km alt_lang
+```
+
+### Build alt_convert_non_convert keymap
+
+```bash
+qmk compile -kb hhkb/ansi -km alt_convert_non_convert
+```
+
+### Flash alt_convert_non_convert keymap
+
+```bash
+qmk flash -kb hhkb/ansi -km alt_convert_non_convert
 ```
